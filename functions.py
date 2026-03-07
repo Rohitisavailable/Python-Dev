@@ -16,6 +16,7 @@ num = sum_a(5, 10)
 
 print(num)
 
+#Positional Arguments
 def sum_a(a, b):
     if type(a) == type(b):
         return a + b
@@ -25,12 +26,14 @@ def sum_a(a, b):
 x = sum_a("ADA", 12)
 print(x)
 
+#Default Arguments
 def shop(item, price=30):
     print("Item:", item)
     print("Price:", price)
 
 shop(price=50, item="Rice")
 
+#Variable-Length Arguments (*args)
 def std(name, cls, *marks):
     print("Name:", name)
     print("Class:", cls)
@@ -48,6 +51,7 @@ def std(name, cls, *marks):
 
 std("XYZ", 10, 30, 20, 51)
 
+#Variable-Length Keyword Arguments (**kwargs)
 def std(name, cls, **marks):
     print("Name:", name)
     print("Class:", cls)
