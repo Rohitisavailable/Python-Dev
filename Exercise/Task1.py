@@ -34,3 +34,23 @@ Note:
     - Demonstrates the use of arguments and parameters in class instantiation
     - Each object maintains its own independent state
 """
+
+#n = input("Name: ")
+#a = int(input("Age: "))
+#m = int(input("Marks: "))
+
+class Student:
+
+    def __init__(self, n , a, **m):
+        self.name = n
+        self.age = a
+        self.marks = m
+    
+    def Display(self):
+        print("Hi", self.name)
+        print("Your age is ", self.age)
+        print("you scored ", self.marks)
+
+s1 = Student("Rohit", 23, maths=93, english=65, science=23)
+
+s1.Display()
